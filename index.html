@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Object Classification</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+	<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+<body>
+	<center>
+		<h1 class="text-center text-dark">Object Classification</h1>
+		<h4 class="text-center text-danger">An AI Model to recognize the following objects</h4>
+		<br><br>
+
+		<h1 class="fw-light text-center">Smartphone</h1>
+		<hr width="1500px">
+
+		<h1 class="fw-light text-center">Water Bottle</h1>
+		<hr  width="1500px">
+
+		<h1 class="fw-light text-center">Spoon</h1>
+		<hr  width="1500px">
+
+		<h1 class="fw-light text-center">Watch</h1>
+		<hr  width="1500px">
+
+		<br><br>
+
+		<h1 class="text-center text-dark">Webcam View</h1>
+		<div style="width: 450px; height: 350px;" class="mb-3 border border-primary border-3" id="camera"></div>
+		<button class="btn btn-primary" onclick="capture()">Capture</button>
+
+
+	<br><br><br><br>
+
+
+	<h3 id="chead">Captured Photo</h3>
+	<div id="pic1"></div>
+	<br>
+	<button class="btn btn-danger" id="cbtn" onclick="setup()">Identify</button>
+	<br><br>
+
+	<h4 id="label"></h4>
+	<h4 id="acc"></h4>
+
+	</center>
+	<script src="main.js"></script>
+	<br><br><br><br><br><br>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
